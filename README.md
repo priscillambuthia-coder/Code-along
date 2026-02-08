@@ -46,7 +46,7 @@ It also features a responsive design that works on various media
 
 ### How to run
 #### Live Site
-You can access this project from the site:
+You can access this project from the site: https://priscillambuthia-coder.github.io/Code-along/
 
 #### Installation guide
 .Download or clone the respository
