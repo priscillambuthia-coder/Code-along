@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, lavender 0%, pink 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+nav {
+    background-color: black;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: lightskyblue;
+}
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 30px mediumaquamarine
+}
+
+h1 {
+    text-align: center;
+    color: darkslategray;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2 {
+    color: darkslategray;
+    margin: 25px 0 20px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+#form-section {
+    background-color: khaki;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color:darkslategray;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    padding: 12px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: lightseagreen;
+    box-shadow: 0 0 8px darkblue;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#addBtn {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, lavender 0%, pink 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#addBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px darkblue;
+}
+
+#addBtn:active {
+    transform: translateY(0);
+}
+
+#destinationsList {
+    list-style: none;
+}
+
+.destination-item {
+    margin-bottom: 20px;
+}
+
+.destination-card {
+    background: linear-gradient(135deg, khaki 0%, lightgray 100%);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid lightskyblue;
+    box-shadow: 0 4px 10px black;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px black;
+}
+
+.destination-card h3 {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.destination-card p {
+    color: grey;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.destination-card strong {
+    color: black;
+}
+
+.delete-btn {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: lightpink;
+    transform: scale(1.05);
+}
+
+.delete-btn:active {
+    transform: scale(0.95);
+}
+
+#destinations-section {
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    #container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .destination-card {
+        padding: 15px;
+    }
+}
