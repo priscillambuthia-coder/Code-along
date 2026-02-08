@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="sstyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tracker</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">My Destinations</a></li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <h1>Places I Have Been To</h1>
+        
+        <div id="form-section">
+            <h2>Add a New Destination</h2>
+            <form id="destinationForm">
+                <label for="location">Location:</label>
+                <input id="location" type="text" placeholder="Enter location" required><br>
+
+                <label for="landmarks">Landmarks:</label>
+                <input id="landmarks" type="text" placeholder="Enter landmarks (comma-separated)"><br>
+
+                <label for="timeOfYear">Time of Year:</label>
+                <input id="timeOfYear" type="text" placeholder="e.g., Summer 2025"><br>
+
+                <label for="notes">Notes:</label>
+                <textarea id="notes" placeholder="Write your experiences and memories..."></textarea><br>
+
+                <button id="addBtn" type="submit">Add Destination</button>
+            </form>
+        </div>
+
+        <div id="destinations-section">
+            <h2 id="destinations">My Destinations</h2>
+            <ul id="destinationsList">
+            </ul>
+        </div>
+    </div>
+  
+    <script src="./style.js"></script> 
+</body>
+</html>
+    
