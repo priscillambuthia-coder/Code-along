@@ -1,0 +1,50 @@
+img{
+    width: 300px;
+    height: 200px;
+    border:2px solid black
+}
+
+h1{
+    color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+h2{
+    color: cornflowerblue;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+h3{
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+body{
+    color: black
+}
+@media screen and (min-width:480px)  {
+    body {
+        background-color: bisque;
+    }
+}
+video{
+    width: 300px;
+    height: 200px;
+}
+a:link{
+    color: darkmagenta;
+    display:-ms-inline-flexbox;
+}
+a:visited{
+    color: darkslategrey;
+}
+li{
+    display: inline;
+    padding: 170px;
+}
+title{
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: indigo;
+}
